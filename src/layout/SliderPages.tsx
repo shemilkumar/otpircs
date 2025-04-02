@@ -17,12 +17,13 @@ const SliderPages = () => {
         className: "center",
         centerMode: true,
         centerPadding: "60px",
-        slidesToShow: 6,
+        slidesToShow: 3,
         infinite: true,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
+        pauseOnHover: false,
         cssEase: "linear",
 
         responsive: [
@@ -48,12 +49,15 @@ const SliderPages = () => {
     };
 
     const slides = [
-        { src: "/img/page1.jpg", href: "https://new.axilthemes.com/themes/abstrak/corporate-agency/" },
-        { src: "/img/page2.jpg", href: "https://new.axilthemes.com/themes/abstrak/corporate-agency/" },
-        { src: "/img/page1.jpg", href: "https://new.axilthemes.com/themes/abstrak/corporate-agency/" },
-        { src: "/img/page2.jpg", href: "https://new.axilthemes.com/themes/abstrak/corporate-agency/" },
-        { src: "/img/page1.jpg", href: "https://new.axilthemes.com/themes/abstrak/corporate-agency/" },
-        { src: "/img/page2.jpg", href: "https://new.axilthemes.com/themes/abstrak/corporate-agency/" },
+        { src: "/img/sliding_images/blackjack.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/sliding_images/astra-vibe.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/sliding_images/shopspot-3.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/sliding_images/shopspot-1.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/sliding_images/shopspot-2.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/sliding_images/montana-2.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/sliding_images/restaurantly-1.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/sliding_images/montana-1.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/sliding_images/restaurantly-2.png", href: "https://blackjack-webgame.netlify.app/" },
     ];
 
     return (
@@ -70,7 +74,7 @@ const SliderPages = () => {
             <div>
                 <Slider {...settings}>
                     {slides.map((slide, index) => (
-                        <div key={index} className="w-[100px] h-[400px] p-4">
+                        <div key={index} className="w-full h-full p-4">
                             <img className=" h-full object-cover " src={slide.src} alt="Demo" />
                         </div>
                     ))}

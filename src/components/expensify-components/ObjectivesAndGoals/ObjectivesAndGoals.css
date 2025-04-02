@@ -1,0 +1,77 @@
+.objectives-goals {
+    padding-top: 200px;
+    padding-right:200px;
+    padding-left:220px;
+    padding-bottom:50px;
+    background-color: #191919;
+    height: 750px;
+  }
+  
+  .goals-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: 30px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+  }
+  
+  .goals-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .left-goal {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .right-goal {
+    flex: 1;
+    padding: 0 20px;
+    padding-left: 230px;
+  }
+  
+  .left-goal ul, .right-goal ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .left-goal li, .right-goal li {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 47.48px;
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+ 
+  .left-goal li.animate, .right-goal li.animate {
+    animation: zoomIn 0.5s ease-out;
+  }
+
+  @media (max-width: 768px) {
+    .goals-content {
+      flex-direction: column;
+      padding: 0 10px; 
+    }
+  
+    .left-goal, .right-goal {
+      padding: 10px 0;
+    }
+  }
+  

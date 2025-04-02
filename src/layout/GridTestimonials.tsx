@@ -32,9 +32,9 @@ const GridTestimonials = () => {
                                         <span className="text-xs font-medium text-gray-400">Software Engineer</span>
                                     </div>
                                 </div>
-                                <div className="text-xl font-medium text-gray-800">Mind-blowing discovery! changed my routine. Essential for everyone. A vise advice to all interested. Can't imagine without it!</div>
+                                <div className="text-xl font-medium text-gray-800">Game-Changing Service! Transformed Our Workflow. A Must-Try for All. Highly Satisfied!</div>
 
-                                <div className="text-sm italic text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, commodi explicabo? Quis quasi porro deleniti temporibus fuga repellat incidunt pariatur aliquid doloribus expedita voluptates inventore, libero laudantium ullam ab culpa nobis nemo sunt qui reprehenderit quidem eum? Quis, dolor explicabo?</div>
+                                <div className="text-sm italic text-gray-600">Exceptional experience with their software solutions. The team’s expertise and dedication ensured seamless development. Every detail was handled with precision, exceeding expectations. Their commitment to quality and innovation truly impressed us. Highly recommended!</div>
                             </div>
 
                             <div className="rounded-lg p-8 flex flex-col gap-6 bg-sky-200 text-black shadow-xl z-50 relative">
@@ -47,9 +47,10 @@ const GridTestimonials = () => {
                                         <span className="text-xs font-medium text-gray-400">E-commerce Manager</span>
                                     </div>
                                 </div>
-                                <div className="text-xl font-medium text-gray-800">Unbelievable gem! Altered my life. A must-have now.</div>
+                                <div className="text-xl font-medium text-gray-800">Incredible service! Enhanced our work. Truly outstanding.</div>
 
-                                <div className="text-sm italic text-gray-600">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ea rem quam cupiditate, eveniet ipsam necessitatibus repellat."</div>
+                                <div className="text-sm italic text-gray-600">"Exceptional team, delivering top-tier solutions. Their expertise, precision, and dedication are unmatched."</div>
+
                             </div>
 
                             <div className="row-span-2 rounded-lg p-8 flex flex-col gap-6 bg-white text-black shadow-xl z-50 relative">
@@ -62,9 +63,9 @@ const GridTestimonials = () => {
                                         <span className="text-xs font-medium text-gray-400">Startup Founder</span>
                                     </div>
                                 </div>
-                                <div className="text-xl font-medium text-gray-800">Such a life-changing experience. Highly recommended</div>
+                                <div className="text-xl font-medium text-gray-800">Truly Transformative Service. Absolutely Recommended</div>
 
-                                <div className="text-sm italic text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat aperiam sit porro libero quo praesentium esse voluptas suscipit illo hic, id explicabo delectus, similique, soluta asperiores voluptatem ex alias veritatis voluptates perferendis. Accusantium atque exercitationem quaerat quos sed, suscipit eius tenetur delectus hic, error recusandae consequatur, iure facilis consequuntur nemo ex maxime repudiandae illum nostrum eaque explicabo in ad velit. Recusandae nostrum praesentium est ad vero repellat ducimus consequuntur magnam cum hic perferendis quis doloribus atque mollitia nesciunt, provident deserunt.</div>
+                                <div className="text-sm italic text-gray-600">Absolutely outstanding service! The team delivered exceptional software solutions tailored to our needs. Their expertise in web applications and websites is unmatched. From start to finish, the process was smooth, and they ensured every detail was perfect. Communication was clear, and their dedication to quality truly impressed us. The final product exceeded expectations, enhancing efficiency and user experience. We highly recommend their services to anyone looking for reliable, cutting-edge solutions. Their commitment to excellence and customer satisfaction makes them stand out in the industry.</div>
                             </div>
 
                             <div className="rounded-lg p-8 flex flex-col gap-6 bg-lime-50 text-black shadow-xl z-50 relative">
@@ -78,9 +79,10 @@ const GridTestimonials = () => {
                                         <span className="text-xs font-medium text-gray-400">Architecht</span>
                                     </div>
                                 </div>
-                                <div className="text-xl font-medium text-gray-800">Life-altering find! Enthusiastically suggest to all.</div>
+                                <div className="text-xl font-medium text-gray-800">Strongly suggest to all users.</div>
 
-                                <div className="text-sm italic text-gray-600">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ea rem quam cupiditate, eveniet ipsam necessitatibus repellat."</div>
+                                <div className="text-sm italic text-gray-600">"Brilliant solutions, transforming our process. Their commitment, expertise, and efficiency are exceptional."</div>
+
                             </div>
 
                             <div className="col-span-2 rounded-lg p-8 flex flex-col gap-6 bg-slate-200 text-black shadow-xl z-50 relative">
@@ -93,9 +95,10 @@ const GridTestimonials = () => {
                                         <span className="text-xs font-medium text-gray-400">Healthcare Consultant</span>
                                     </div>
                                 </div>
-                                <div className="text-xl font-medium text-gray-800">Phenomenal addition! Completely transformed my days. Can't go without it. Strongly endorse for all. A game-changer for sure, Highly recommended!</div>
+                                <div className="text-xl font-medium text-gray-800">Exceptional service! Revolutionized our workflow. Couldn't be happier. Strongly suggest to all. A top-tier solution, highly recommended!</div>
 
-                                <div className="text-sm italic text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, commodi explicabo? Quis quasi porro deleniti temporibus fuga repellat incidunt pariatur aliquid doloribus expedita voluptates inventore, libero laudantium ullam ab culpa nobis nemo sunt qui reprehenderit quidem eum? Quis, dolor explicabo?</div>
+                                <div className="text-sm italic text-gray-600">Outstanding team delivering cutting-edge solutions. Their dedication, precision, and expertise ensured seamless execution, exceeding expectations. Reliable, innovative, and truly impressive in every aspect. Absolutely worth it!</div>
+
                             </div>
 
                         </div>

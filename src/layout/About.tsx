@@ -12,7 +12,7 @@ const About = () => {
                     </span>
                     <h1 className="text-5xl font-medium justify-start">Who We Are</h1>
                     <p className="w-full text-gray-500 font-normal text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet quos velit ullam natus atque provident, voluptatibus corporis vero? Dicta repellat inventore aut quisquam, tempora unde voluptas non aspernatur, reiciendis dignissimos dolores sunt eveniet, atque molestiae eos fugit? Dolor, recusandae.
+                    We are a dedicated team committed to delivering innovative web solutions. We strive for excellence in every project, ensuring our clients receive tailored services that drive success and foster growth in their businesses.
                     </p>
                 </div>
 

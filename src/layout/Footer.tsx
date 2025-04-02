@@ -1,10 +1,15 @@
-import React from 'react';
 import './Footer.css'; // Import your CSS file
 import { FaFacebook, FaLocationDot, FaTelegram, FaTwitter } from 'react-icons/fa6';
 import { IoIosCall, IoIosMail } from 'react-icons/io';
 import { FcGoogle } from 'react-icons/fc';
+import { Link } from "react-scroll";
+import ContactUsModal from '../components/ContactUsModal/ContactUsModal';
+import { useState } from 'react';
 
-const Footer: React.FC = () => {
+const Footer: React.FC = ({ theme = 'light' }: { theme?: string }) => {
+
+    const [showModal, setShowModal] = useState(false)
+
     return (
         <footer className="footer-section bg-gradient-to-b from-teal-50 via-white to-white">
             <div className="container">
@@ -17,7 +22,7 @@ const Footer: React.FC = () => {
 
                                 <div className="cta-text">
                                     <h4>Call us</h4>
-                                    <span>9876543210</span>
+                                    <span>9745563649</span>
                                 </div>
                             </div>
                         </div>
@@ -27,7 +32,7 @@ const Footer: React.FC = () => {
                                 <FaLocationDot className='h-10 w-10 text-purple-500' />
                                 <div className="cta-text">
                                     <h4>Find us</h4>
-                                    <span>1010 Avenue, sw 54321, chandigarh</span>
+                                    <span>Koramangala, Bengaluru, Karnataka 560034</span>
                                 </div>
                             </div>
                         </div>
@@ -50,19 +55,17 @@ const Footer: React.FC = () => {
                         <div className="col-xl-4 col-lg-4 mb-50 w-5/12">
                             <div className="footer-widget">
                                 <div className="footer-logo">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <img
-                                            src="https://i.ibb.co/QDy827D/ak-logo.png"
-                                            className="img-fluid"
+                                            src={`/logo/scripto-${theme === 'light' ? 'black' : 'white'}.png`}
+                                            className="img-fluid w-full h-full"
                                             alt="logo"
                                         />
                                     </a>
                                 </div>
                                 <div className="footer-text">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
-                                        sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                        elit,Lorem ipsum dolor sit amet.
+                                        We specialize in crafting custom web applications and solutions tailored to your business needs. Our commitment to quality and innovation drives us to deliver exceptional results that enhance your online presence.
                                     </p>
                                 </div>
                                 <div className="footer-social-icon">
@@ -120,23 +123,41 @@ const Footer: React.FC = () => {
                 <div className="row flex justify-between px-[185px]">
                     <div className="">
                         <div className="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a>{" "}Shemil</a></p>
+                            <p>Copyright &copy; 2018, All Right Reserved <a>{" "}Scripto</a></p>
                         </div>
                     </div>
                     <div className="">
                         <div className="footer-menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                {/* <li><a href="#">Home</a></li>
                                 <li><a href="#">Terms</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Contact</a></li> */}
+
+                                <li className="cursor-pointer">
+                                    <Link to="projects" smooth={true} offset={-128} duration={500}>Projects</Link>
+                                </li>
+                                <li className="cursor-pointer">
+                                    <Link to="whyus" smooth={true} offset={-128} duration={500}>Why Us</Link>
+                                </li>
+                                <li className="cursor-pointer">
+                                    <Link to="about" smooth={true} offset={-128} duration={750}>About</Link>
+                                </li>
+                                <li className="cursor-pointer">
+                                    <Link to="testimonials" smooth={true} offset={-5} duration={750}>Testimonial</Link>
+                                </li>
+                                <li className="cursor-pointer">
+                                    <Link to="" onClick={() => setShowModal(true)}>Contact</Link>
+                                </li>
                             </ul>
                         </div>
                         {/* </div> */}
                     </div>
                 </div>
             </div>
+            {showModal ? <ContactUsModal closeModal={() => setShowModal(false)} /> : ''}
+
         </footer>
     );
 };
