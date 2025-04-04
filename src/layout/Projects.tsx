@@ -40,23 +40,27 @@ const Projects = () => {
     };
 
     const slides = [
-        { src: "/img/image1.jpg", href: "https://new.axilthemes.com/themes/abstrak/home-startup/" },
-        { src: "/img/image2.jpg", href: "https://new.axilthemes.com/themes/abstrak/corporate-agency/" },
-        { src: "/img/image3.webp", href: "https://new.axilthemes.com/themes/abstrak/" },
-        { src: "/img/image4.webp", href: "https://new.axilthemes.com/themes/abstrak/creative-agency/" },
+        { src: "/img/restaurantly.png", href: "https://restaurantly-scripto.netlify.app/" },
+        { src: "/img/montana.png", href: "https://montana-scripto.netlify.app/" },
+        { src: "/img/astra-vibe.png", href: "https://astra-vibe.netlify.app/" },
+        { src: "/img/blackjack.png", href: "https://blackjack-webgame.netlify.app/" },
+        { src: "/img/shopspot.png", href: "https://shopspot-shemil.vercel.app/" },
+
     ];
 
     return (
         <div className="mb-48 -mt-40 flex ">
-            <div className="my-4 mr-4 p-2 bg-white flex justify-center items-center shadow-lg w-[5%]">
+            <div className="mb-2 mr-4 p-2 bg-white flex justify-center items-center shadow-lg w-[5%]">
                 <h1 className="text-3xl -rotate-90 font-medium tracking-widest">Projects</h1>
             </div>
             <div className="w-[95%] overflow-hidden">
                 <Slider {...settings}>
                     {slides.map((slide, index) => (
-                        <div key={index} className="w-full h-[400px] p-4">
-                            <img className="w-full h-full object-cover hover:scale-110 transition-all duration-500" src={slide.src} alt="Demo" />
-                        </div>
+                        <a key={index} className="w-full bg-transparent px-4" href={slide.href} target="blank">
+                            <div className="bg-white p-4">
+                                <img className="w-full h-full hover:scale-110 transition-all duration-500" src={slide.src} alt="Demo" />
+                            </div>
+                        </a>
                     ))}
                 </Slider>
             </div>

@@ -1,0 +1,87 @@
+@keyframes slowPopup {
+  0% {
+      transform: translateY(100vh) scale(0.5); 
+      opacity: 0;
+  }
+  60% {
+      transform: translateY(-10px) scale(1.05); 
+      opacity: 0.8;
+  }
+  100% {
+      transform: translateY(0) scale(1); 
+      opacity: 1;
+  }
+}
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1396px;
+    padding: 0px; 
+    background-color: #191919;
+    ; 
+  }
+  .left-content {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding-left: 200px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .right-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .expensify-icon{
+    margin-top: -400px ;
+    margin-left: 50px;
+  }
+  
+  .expense-tracking-app-concept {
+    width: 621px;
+    height: 205px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 108px;
+    letter-spacing: -0.025em;
+    text-align: left;
+    margin-top: 250px; 
+    margin-left: 50px;
+    color:#FFFFFF;
+    ; 
+  }
+  @media (max-width: 768px) {
+    .intro {
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px;
+    }
+
+    .left-content, .right-content {
+        flex: none;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expensify-icon, .expense-tracking-app-concept {
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .expense-tracking-app-concept {
+        font-size: 36px;
+        line-height: 54px;
+        width: auto; 
+        height: auto; 
+    }
+}

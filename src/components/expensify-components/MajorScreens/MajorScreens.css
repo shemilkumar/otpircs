@@ -1,0 +1,39 @@
+.major-screens-section {
+    background-color: #191919; /* Optional background color */
+    padding: 60px;
+    padding-top: 300px /* Adjust padding as needed */
+}
+
+.major-screens-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF; /* Adjust color as needed */
+    text-align: left;
+    padding-left: 190px;
+    margin-bottom: 200px; /* Space between heading and content */
+}
+
+.major-screens-container {
+    display: flex;
+    flex-direction: column;
+        align-items: center; /* Centers the images horizontally */
+    padding: 20px; /* Padding inside the container */
+    gap: 100px; /* Space between images */
+}
+
+.major-screen-item {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the images horizontally */
+}
+
+.major-screen-item img {
+    width: 70%; /* Make images responsive */
+    max-width: 1200px; /* Max width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+}

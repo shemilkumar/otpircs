@@ -1,0 +1,67 @@
+    .product-users {
+        position: relative;
+        height: 1003px;
+        background-color: #191919; 
+        padding-top: 0px;
+    }
+
+    .product-users-content{
+        position: relative;
+        height: 700px;
+        width: 100%;
+        background-color: #2F2F2F; 
+        padding-top: 200px;
+        box-sizing: border-box; 
+    }
+
+    .inner-content {
+        width: 596px;
+        text-align: center;
+        z-index: 1; 
+    }
+
+    .product-users-heading {
+        font-family: 'Poppins', sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 72px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        margin-bottom: 31px;
+        color: #FFFFFF;
+    }
+
+    .product-users-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 47.48px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .highlighted-text {
+        font-weight: 600;
+        color: #188AEC; 
+    }
+
+    .product-image-left {
+        position: absolute;
+        top: 50%; /* Center vertically */
+        left: -4px; /* Move image to the left, partially outside the viewport */
+        transform: translateY(-103%); /* Center image vertically */
+        z-index: 0; /* Behind the content */
+    }
+    .product-image-top-right {
+        position: absolute;
+        top: -120px; /* Move image up, partially outside the product-users section */
+        right: 70px;
+        z-index: 0; /* Behind the content */
+    }
+
+    .product-image-bottom-right {
+        position: absolute;
+        bottom: 90px; /* Move image down, partially outside the product-users section */
+        right: 140px; /* Move image to the right, partially outside the viewport */
+        z-index: 0; /* Behind the content */
+    }

@@ -1,8 +1,33 @@
 import { IoMdClose } from 'react-icons/io';
 import './ContactUsModal.css'
 import { FaTelegram } from 'react-icons/fa6';
+import { FormEvent, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactUsModal = (props: { closeModal: () => void }) => {
+
+    const SERVICEID = 'service_vtmkh2v';
+    const TEMPLATE_ID = 'template_b1y5qyo';
+    const PUBLIC_KEY = 'b32A-OS0qdna8THmq';
+
+    const form = useRef<HTMLFormElement | null>(null); 
+
+    const sendEmail = (e: FormEvent) => {
+
+        e.preventDefault();
+
+        if (form.current)
+            emailjs.sendForm(SERVICEID, TEMPLATE_ID, form.current, { publicKey: PUBLIC_KEY })
+                .then(
+                    () => {
+                        console.log('SUCCESS!');
+                    },
+                    (error) => {
+                        console.log('FAILED...', error.text);
+                    },
+                );
+    }
+
     return (
         <div className="modal-layout">
             <div className="modal-container">
@@ -19,18 +44,19 @@ const ContactUsModal = (props: { closeModal: () => void }) => {
                     <div className="container-contact">
                         <div className="wrap-contact">
 
-                            <form name="contact" className="contact-form validate-form">
+                            <form ref={form} onSubmit={sendEmail} name="contact" className="contact-form validate-form">
 
                                 <div className="wrap-input validate-input" data-validate="Please enter your name">
-                                    <input className="input" type="text" name="name" placeholder="Full Name" />
+                                    <input className="input" type="text" name="user_name" placeholder="Full Name" />
                                 </div>
 
                                 <div className="wrap-input validate-input" data-validate="Please enter your email">
-                                    <input className="input" type="text" name="email" placeholder="E-mail" />
+                                    <input className="input" type="text" name="user_email" placeholder="E-mail" />
                                 </div>
 
                                 <div className="wrap-input validate-input" data-validate="Please enter your message">
-                                    <textarea className="input" name="message" placeholder="Your Message"></textarea>
+                                    <textarea className="input" name="message" placeholder="Your Message"
+                                        style={{ resize: 'none' }}></textarea>
                                 </div>
 
                                 <div className="container-contact-form-btn">
@@ -41,8 +67,10 @@ const ContactUsModal = (props: { closeModal: () => void }) => {
                                 </div>
 
                                 <div className="grid-container">
-                                    <div className="item1 left-align"><i className="fa fa-lg fa-map-marker-alt"></i> 4517 Washington Ave, Manchester, Kentucky 39495</div>
-                                    <div className="item4 right-align"><i className="fa fa-lg fa-phone"></i> 9745562644</div>
+                                    <div className="item1 left-align"><i className="fa fa-lg fa-map-marker-alt"></i>
+                                        Koramangala 1st Block, Bangalore, 560034
+                                    </div>
+                                    <div className="item4 right-align"><i className="fa fa-lg fa-phone"></i> 9745563649</div>
 
                                 </div>
                             </form>

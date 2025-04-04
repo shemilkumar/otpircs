@@ -1,0 +1,90 @@
+.sketches {
+  background-color: #191919;
+  margin-top: -400px;
+}
+
+.sketches-heading {
+  height: 68px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  margin-left: 250px;
+  margin-top: 0px;
+  color: #FFFFFF;
+  /* Assuming white text color */
+  margin-bottom: 50px;
+  /* Space between heading and description */
+}
+
+.sketches-row {
+  display: flex;
+  flex-wrap: space-around;
+  padding: 0 200px;
+}
+
+.sketches-column {
+  flex: 50%;
+  /* width: 20%; */
+  max-width: 50%;
+  padding: 0 30px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sketches-column img {
+  margin-top: 60px;
+  vertical-align: middle;
+  width: 50% !important;
+  /* opacity: 0; */
+  transform: translateY(15px);
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+
+@media (max-width: 768px) {
+  .sketches-heading {
+    margin-left: 0;
+    /* Center align the heading */
+    text-align: center;
+    font-size: 36px;
+    /* Adjust font size if needed */
+  }
+
+  .sketches-row {
+    padding: 0 10px;
+    /* Reduce padding for smaller screens */
+    flex-direction: column;
+    /* Stack columns on top of each other */
+  }
+
+  .sketches-column {
+    flex: 100%;
+    /* Make each column take full width */
+    max-width: 100%;
+    padding: 0;
+    /* Remove padding for full-width columns */
+  }
+
+  .sketches-column img {
+    margin-top: 0;
+    /* Remove top margin */
+    width: 100%;
+    /* Ensure images take full width of column */
+  }
+}
